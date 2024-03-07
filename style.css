@@ -18,6 +18,7 @@ ul{
     box-sizing: border-box;
     justify-content: space-between;
     width: auto;
+    flex-wrap:inherit;
 }
 
 
@@ -26,12 +27,13 @@ ul{
     font-weight: 600;
     justify-content: center;
     padding: 15px;
+    flex-wrap: wrap;
 }
 
 .image{
     overflow: hidden;
     position: relative;
-    
+
 }
 .image-text{
     color: white;
@@ -47,9 +49,9 @@ a:link {
 }
 
 a:hover {
-    text-decoration:underline burlywood wavy;
-    color:#514936;
-}
+      text-decoration:underline burlywood wavy;
+      color:#514936;
+  }
 
 h2{
     font-size: 5rem;
@@ -58,19 +60,20 @@ h2{
     position: relative;
 }
 
-.dropdown-content{
+div.dropdown-content{
     display: none;
     position: absolute;
-    color: rgb(155, 30, 30);
-    box-sizing: border-box;
     background-color: black;
-    
+    width: 200%;
 }
 
-.dropdown-content a {
-    color:yellow ;
-    cursor: pointer;
-    font-size: 12px;
-    text-decoration: none;
-    padding: 20px;
-} 
+.dropdown:hover  div.dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover{
+  color: yellow;
+}
+
+.dropdown-content a{
+  color: white;
+}

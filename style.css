@@ -1,11 +1,11 @@
-body , h2  {
+body {
     margin: 0;
 }
 
 ul{
     padding: 0;
 }
-.container , .image-text {
+.container , .image-text , h2{
     text-transform: uppercase;
     font-family: "Barlow Condensed",sans-serif;
 }
@@ -16,9 +16,10 @@ ul{
 .container{
     text-align: center;
     box-sizing: border-box;
-    justify-content: space-around;
+    justify-content: space-between;
     width: auto;
     flex-wrap:inherit;
+    margin: auto;
 }
 
 
@@ -28,6 +29,18 @@ ul{
     justify-content: center;
     padding: 15px;
     flex-wrap: wrap;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: #000;
+    margin-top: 30px;
+}
+
+h2 > a:link {
+    text-decoration: underline #ffd49b solid;
+    color: #ffd49b;
 }
 
 .image{
@@ -41,6 +54,7 @@ ul{
     position: absolute;
     top: 50%;
     width: 100%;
+    font-size: 5rem;
 }
 
 a:link {
@@ -57,9 +71,7 @@ a:hover {
       color:#514936;
   }
 
-h2{
-    font-size: 5rem;
-}
+
 .dropdown{
     position: relative;
 }
@@ -84,3 +96,9 @@ div.dropdown-content{
 .dropdown-content a{
   color: white;
 }
+
+.section{
+    padding: 150px;
+}
+
+

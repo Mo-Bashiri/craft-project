@@ -5,12 +5,12 @@ body {
 ul{
     padding: 0;
 }
-.container , .image-text , h2, h3{
+.container , .image-text , h2, h3 ,h4 {
     text-transform: uppercase;
     font-family: "Barlow Condensed",sans-serif;
 }
 
-.container , .navbar , .image , .dropdown ,.divider, section2{
+.container , .navbar , .image , .dropdown ,.divider, .section2 , .card, .row{
     display: flex;
 }
 .container{
@@ -50,7 +50,7 @@ h3 > a:link {
     color: white;
     position: absolute;
     text-align: center;
-    top: 35%;
+    top: 15%;
     left: 35%;
     font-size: 5rem;
     
@@ -66,7 +66,7 @@ a:visited{
 }
 
 a:hover {
-      text-decoration:underline#ffd49b wavy;
+      text-decoration:underline #ffd49b wavy;
       color:#514936;
   }
 
@@ -82,14 +82,14 @@ div.dropdown-content{
     width: 200%;
     padding: 20px;
     z-index: 1;
-    text-align: justify;
+    
 }
 
 .dropdown:hover  div.dropdown-content {
     display: block;
 }
 .dropdown-content a:hover{
-  color: yellow;
+  color: #ffd49b;
 }
 
 .dropdown-content a{
@@ -102,18 +102,39 @@ div.dropdown-content{
 
 .section2{
     flex-direction: column;
+    width:auto;
+    /* flex-wrap: wrap; */
 }
+
+.row {
+    flex-wrap: wrap;
+
+}
+.card{
+      /* margin: auto; */
+      background-color: white;
+      color: #000;
+     
+      
+}
+
 
 .divider {
   position: absolute;
   left: 50%;
-  margin-left: -50px
+  margin-left: -50px;
 }
 
 h2::before{
-    content: "every thing we do is ";
+    content: "everything we do is ";
     font-size: 15px;
-    /* text-align: center; */
     color: rgba(255, 255, 255, .5);
+
+}
+h4 {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
 }
 

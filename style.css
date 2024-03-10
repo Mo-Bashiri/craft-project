@@ -108,7 +108,8 @@ div.dropdown-content{
 
 .row {
     flex-wrap: wrap;
-
+    margin: auto;
+    /* justify-content: space-around; */
 }
 .card{
       /* margin: auto; */

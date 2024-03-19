@@ -5,12 +5,12 @@ body {
 ul{
     padding: 0;
 }
-.container , .image-text , h2, h3 ,h4 {
+.container , .image-text , h2, h3 ,h4, h5 {
     text-transform: uppercase;
     font-family: "Barlow Condensed",sans-serif;
 }
 
-.container , .navbar , .image , .dropdown ,.divider, .section2 , .card, .row{
+.container , .navbar , .image , .dropdown ,.divider, .section2 , .card, .row, h4{
     display: flex;
 }
 .container{
@@ -43,6 +43,7 @@ h3 > a:link {
     color: #ffd49b;
 }
 
+
 .image{
     position: relative;
 }
@@ -50,7 +51,7 @@ h3 > a:link {
     color: white;
     position: absolute;
     text-align: center;
-    top: 15%;
+    top: 20%;
     left: 35%;
     font-size: 5rem;
 
@@ -139,4 +140,24 @@ h4 {
     font-size: 40px;
     padding: 0 0 0 15px;
     /* margin: 100px; */
+    color: #000;
+}
+
+.image-container{
+  position: relative;
+  text-align: center;
+  background-color: white;
+}
+
+.centered{
+  position: absolute;
+   top: 50%;
+   left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+h5 {
+  font-size: 20px;
+  background-color: white;
+  padding: 70px;
 }

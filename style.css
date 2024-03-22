@@ -161,7 +161,8 @@ h4 {
 h5 {
   font-size: 20px;
   background-color: white;
+  background-size: contain;
   padding: 70px;
-  width: 100px;
+  width: 100%;
   color: #000;
 }

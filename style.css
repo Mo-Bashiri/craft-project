@@ -141,28 +141,30 @@ h2::before{
 h4 {
     font-size: 40px;
     padding: 0 0 0 15px;
-    /* margin: 100px; */
     color: #000;
 }
 
 .image-container{
   position: relative;
   text-align: center;
-  background-color: white;
+
 }
 
 .centered{
   position: absolute;
-   top: 50%;
-   left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-
+  /* margin: auto; */
 }
 h5 {
-  font-size: 20px;
+  font-size: 25px;
   background-color: white;
   background-size: contain;
   padding: 70px;
   width: 100%;
   color: #000;
 }
+/* .text-card:hover{
+
+} */

@@ -5,12 +5,12 @@ body {
 ul{
     padding: 0;
 }
-.container , .image-text , h2, h3 ,h4, h5 , .subtitle, .box{
+.container , .image-text , h2, h3 ,h4, h5 , .subtitle, .box, .card-link{
     text-transform: uppercase;
     font-family: "Barlow Condensed",sans-serif;
 }
 
-.container , .navbar , .image , .dropdown ,.divider, .section2 , .card, .row, h4, .subtitle , .box , .centered{
+.container , .navbar , .image , .dropdown ,.divider, .section2 , .card, .row, h4, .subtitle , .box , .centered , .card-link {
     display: flex;
 }
 .container{
@@ -27,7 +27,7 @@ ul{
     font-size:16px ;
     font-weight: 600;
     justify-content: center;
-    padding: 15px;
+    padding: 30px;
     flex-wrap: wrap;
 }
 
@@ -41,6 +41,13 @@ h3{
 h3 > a:link {
     text-decoration: underline #ffd49b solid;
     color: #ffd49b;
+}
+
+
+
+.h3:hover{
+  color:  #ffd49b;
+  text-decoration: underline #ffd49b solid;
 }
 
 
@@ -67,8 +74,7 @@ a:visited{
 }
 
 a:hover {
-      text-decoration:underline #ffd49b wavy;
-      color:#514936;
+    text-decoration:underline #ffd49b wavy;
   }
 
 
@@ -83,7 +89,7 @@ div.dropdown-content{
     width: 200%;
     padding: 20px;
     z-index: 1;
-
+    bottom: -74%;
 }
 
 .dropdown:hover  div.dropdown-content {
@@ -91,6 +97,7 @@ div.dropdown-content{
 }
 .dropdown-content a:hover{
   color: #ffd49b;
+  text-decoration: none;
 }
 
 .dropdown-content a{
@@ -112,13 +119,31 @@ div.dropdown-content{
     padding: 10px;
 }
 .card{
-      background-color: white;
+      /* background-color: white; */
       color: #000;
       flex-direction: row;
       padding: 10px;
       width: 571px;
+      position: relative;
 }
 
+.card-link{
+  text-decoration:underline #ffd49b solid;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  /* padding: 0 0 0 30px; */
+  color: #000;
+  text-align: left;
+  margin: 0 50px;
+  top: 50%;
+}
+
+a.card-link:hover {
+  text-decoration:underline #ffd49b solid !important;
+  color: #ffd49b;
+
+}
 
 .divider {
   position: absolute;
@@ -133,9 +158,12 @@ h2::before{
 
 }
 h4 {
-    font-size: 40px;
-    padding: 0 0 0 15px;
+    font-size: 60px;
+    /* padding: 0 0 0 30px; */
+    margin:0px 70px 20px 50px;
     color: #000;
+    position: absolute;
+    top: 30%;
 }
 
 .image-container{
@@ -143,6 +171,7 @@ h4 {
   text-align: center;
 
 }
+
 
 .centered, .subtitle {
   position: absolute;
@@ -167,8 +196,6 @@ h5 {
   color: #000;
   text-align: center;
   box-sizing: border-box;
-  /* margin: 0px 0px 25px 0px; */
-
 }
 
 
@@ -178,7 +205,6 @@ h5 {
   color: #000;
   text-transform: none !important;
   margin-top: 45px;
-  /* margin-bottom: 10px; */
 }
 
 .subtitle:hover{

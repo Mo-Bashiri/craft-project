@@ -87,10 +87,14 @@ div.dropdown-content{
     position: absolute;
     background-color: black;
     width: 200%;
-    padding: 20px;
+    padding: 30px 30px 30px 40px;
     z-index: 1;
     bottom: -74%;
+    text-align: left;
+    font-size: 14px;
 }
+
+
 
 .dropdown:hover  div.dropdown-content {
     display: block;
@@ -119,7 +123,6 @@ div.dropdown-content{
     padding: 10px;
 }
 .card{
-      /* background-color: white; */
       color: #000;
       flex-direction: row;
       padding: 10px;
@@ -132,7 +135,6 @@ div.dropdown-content{
   font-size: 15px;
   font-weight: bold;
   position: absolute;
-  /* padding: 0 0 0 30px; */
   color: #000;
   text-align: left;
   margin: 0 50px;
@@ -159,7 +161,6 @@ h2::before{
 }
 h4 {
     font-size: 60px;
-    /* padding: 0 0 0 30px; */
     margin:0px 70px 20px 50px;
     color: #000;
     position: absolute;
@@ -210,3 +211,10 @@ h5 {
 .subtitle:hover{
   color:  #9c9c9c;
 }
+
+.card-link::after{
+  content: "";
+  text-decoration: #ffd49b solid;
+  background-color: #ffd49b;
+  color: #ffd49b;
+  }

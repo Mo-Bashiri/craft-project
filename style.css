@@ -10,7 +10,7 @@ ul{
     font-family: "Barlow Condensed",sans-serif;
 }
 
-.container , .navbar , .image , .dropdown ,.divider, .section2 , .card, .row, h4, .subtitle , .box , .centered , .card-link {
+.container , .navbar , .image , .dropdown ,.divider, .section, .section2 ,.section3, .card, .row, h4, .subtitle , .box , .centered , .card-link, .section3-image ,.section3-text, p{
     display: flex;
 }
 .container{
@@ -54,7 +54,7 @@ h3 > a:link {
 .image{
     position: relative;
 }
-.image-text{
+.h2{
     color: white;
     position: absolute;
     text-align: center;
@@ -82,19 +82,27 @@ a:hover {
     position: relative;
 }
 
-div.dropdown-content{
+.dropdown-content{
     display: none;
     position: absolute;
     background-color: black;
-    width: 200%;
+    width: 260px;
     padding: 30px 30px 30px 40px;
     z-index: 1;
-    bottom: -74%;
-    text-align: left;
-    font-size: 14px;
+    top: 78px;
+
+
 }
 
+.dropdown-text{
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+}
 
+/* .dropdown-text:hover{
+   /* text-decoration:underline #ffd49b wavy; */
+/* }  */
 
 .dropdown:hover  div.dropdown-content {
     display: block;
@@ -110,6 +118,8 @@ div.dropdown-content{
 
 .section{
     padding: 150px;
+    position: relative;
+    justify-content: center;
 }
 
 .section2{
@@ -119,7 +129,7 @@ div.dropdown-content{
 
 
 .row {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
 }
 .card{
@@ -137,7 +147,7 @@ div.dropdown-content{
   position: absolute;
   color: #000;
   text-align: left;
-  margin: 0 50px;
+  margin: 0 30px;
   top: 50%;
 }
 
@@ -159,9 +169,9 @@ h2::before{
     color: rgba(255, 255, 255, .5);
 
 }
-h4 {
-    font-size: 60px;
-    margin:0px 70px 20px 50px;
+.card-text {
+    font-size: 50px;
+    margin:0px 70px 20px 30px;
     color: #000;
     position: absolute;
     top: 30%;
@@ -170,7 +180,6 @@ h4 {
 .image-container{
   position: relative;
   text-align: center;
-
 }
 
 
@@ -212,9 +221,36 @@ h5 {
   color:  #9c9c9c;
 }
 
-.card-link::after{
+/* .card-link::after{
   content: "";
   text-decoration: #ffd49b solid;
   background-color: #ffd49b;
   color: #ffd49b;
+  } */
+
+  .section3{
+    padding: 210px 0px  210px 70px;
+    /* margin: 0; */
+    /* padding-right: 0; */
+
+  }
+  .c-divider{
+    position: absolute;
+    margin-bottom: 20px;
+  }
+
+  .section3-image{
+    margin-left: 35%;
+    width: 100%;
+  }
+
+  .section3-text{
+    font-size: 45px;
+    margin:30px 0;
+
+  }
+
+  .p{
+    width: 35%;
+    font-size: 17px;
   }

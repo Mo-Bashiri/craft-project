@@ -5,7 +5,7 @@ body {
 ul{
     padding: 0;
 }
-.container , .image-text , h2, h3 ,h4, h5 , .subtitle, .box, .card-link{
+.container , .image-text , h2, h3 ,h4, h5 , .subtitle, .box, .card-link {
     text-transform: uppercase;
     font-family: "Barlow Condensed",sans-serif;
 }
@@ -30,6 +30,15 @@ ul{
     padding: 30px;
     flex-wrap: wrap;
 }
+
+.navbar a:visited  {
+  color: #4b463e;
+}
+
+.navbar a:hover {
+  text-decoration:underline #ffd49b wavy;
+}
+
 
 h3{
     font-size: 25px;
@@ -69,13 +78,6 @@ a:link {
     color: #4b463e;
 }
 
-a:visited{
-    color: #4b463e;
-}
-
-a:hover {
-    text-decoration:underline #ffd49b wavy;
-  }
 
 
 .dropdown{
@@ -91,7 +93,6 @@ a:hover {
     z-index: 1;
     top: 78px;
 
-
 }
 
 .dropdown-text{
@@ -100,9 +101,6 @@ a:hover {
   line-height: 1.5;
 }
 
-/* .dropdown-text:hover{
-   /* text-decoration:underline #ffd49b wavy; */
-/* }  */
 
 .dropdown:hover  div.dropdown-content {
     display: block;
@@ -141,22 +139,35 @@ a:hover {
 }
 
 .card-link{
-  text-decoration:underline #ffd49b solid;
+  text-decoration:underline #ffd49b solid 2px !important;
   font-size: 15px;
   font-weight: bold;
   position: absolute;
-  color: #000;
   text-align: left;
-  margin: 0 30px;
   top: 50%;
 }
 
+a.card-link{
+  color: #000;
+
+}
+a.card-link:visited{
+  color: #4b463e;
+}
+
 a.card-link:hover {
-  text-decoration:underline #ffd49b solid !important;
+  text-decoration:underline #ffd49b solid;
   color: #ffd49b;
 
 }
 
+.card-text {
+    font-size: 50px;
+    margin:0px 70px 20px 0px;
+    color: #000;
+    position: absolute;
+    top: 30%;
+}
 .divider {
   position: absolute;
   left: 50%;
@@ -168,13 +179,6 @@ h2::before{
     font-size: 15px;
     color: rgba(255, 255, 255, .5);
 
-}
-.card-text {
-    font-size: 50px;
-    margin:0px 70px 20px 30px;
-    color: #000;
-    position: absolute;
-    top: 30%;
 }
 
 .image-container{
@@ -209,7 +213,6 @@ h5 {
 }
 
 
-
 .subtitle {
   font-size: 15px;
   color: #000;
@@ -221,22 +224,13 @@ h5 {
   color:  #9c9c9c;
 }
 
-/* .card-link::after{
-  content: "";
-  text-decoration: #ffd49b solid;
-  background-color: #ffd49b;
-  color: #ffd49b;
-  } */
-
   .section3{
     padding: 210px 0px  210px 70px;
-    /* margin: 0; */
-    /* padding-right: 0; */
-
   }
   .c-divider{
     position: absolute;
     margin-bottom: 20px;
+
   }
 
   .section3-image{
@@ -247,10 +241,15 @@ h5 {
   .section3-text{
     font-size: 45px;
     margin:30px 0;
-
+    width: 40%;
   }
 
   .p{
-    width: 35%;
-    font-size: 17px;
+    width: 30%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .link{
+    margin-top: 12%;
   }

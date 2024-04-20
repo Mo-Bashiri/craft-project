@@ -2,18 +2,17 @@
   box-sizing: border-box;
 }
 
-body {
+body, ul {
     margin: 0;
-    /* overflow: hidden; */
 }
 
 
-.container , .image-text , h2, h3 ,h4, h5 , .subtitle, .box, .card-link , .section4-card, .image-subtitle , .founder, .button {
+.container , .image-text , h2, h3 ,h4, h5 , .subtitle, .box, .card-link , .section4-card, .image-subtitle , .founder, .button , .list{
     text-transform: uppercase;
     font-family: "Barlow Condensed",sans-serif;
 }
 
-.container , .button,.navbar , .image , .dropdown ,.divider, .section, .section2 ,.section3, .section4, .section5, .section6, .section5-image, .section5-text,.section3-text, .section3-image,.card, .row, h4 , .subtitle , .box , .centered , .card-link, .section3-image ,.section3-text, p , .section4-card{
+.container , .button,.navbar ,.footer ,.image , .dropdown ,.divider, .section, .section2 ,.section3, .section4, .section5, .section6, .section5-image, .section5-text,.section3-text, .section3-image,.card, .row, h4 , .subtitle , .box , .centered , .card-link, .section3-image ,.section3-text, p , .section4-card{
     display: flex;
 }
 .container{
@@ -46,11 +45,11 @@ body {
 h3{
     font-size: 25px;
     text-align: center;
-    color: #000;
+    /* color: #000; */
     margin-top: 30px;
 }
 
-h3 > a:link {
+.h3:link {
     text-decoration: underline #ffd49b solid;
     color: #ffd49b;
 }
@@ -375,4 +374,36 @@ h5 {
     top: 65%;
     left: 45%;
     position: absolute;
+  }
+
+  .botton button:hover{
+    background-color: white;
+  }
+
+  .div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .list{
+    color: #5c5750;
+    font-size: 12px;
+    list-style-type: none;
+    line-height: 2;
+
+  }
+
+  .list a:hover{
+    color: #000 ;
+  }
+
+
+
+  .footer{
+    background-color: #f7f7f7;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    margin-top: 150px;
   }

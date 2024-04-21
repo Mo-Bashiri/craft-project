@@ -42,24 +42,17 @@ body, ul {
 }
 
 
-h3{
+.h3{
     font-size: 25px;
     text-align: center;
-    /* color: #000; */
     margin-top: 30px;
 }
 
-.h3:link {
-    text-decoration: underline #ffd49b solid;
+.h3 a {
+    text-decoration: underline #ffd49b solid !important;
     color: #ffd49b;
 }
 
-
-
-.h3:hover{
-  color:  #ffd49b;
-  text-decoration: underline #ffd49b solid;
-}
 
 
 .image{
@@ -406,4 +399,10 @@ h5 {
     padding: 30px;
     align-items: center;
     margin-top: 150px;
+  }
+
+  .section7{
+    width: 1600px;
+    justify-content: space-between;
+    /* gap: 150px; */
   }

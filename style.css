@@ -406,3 +406,16 @@ h5 {
     justify-content: space-between;
     /* gap: 150px; */
   }
+
+  .form{
+    background-color: #f7f7f7;
+    margin-top: 20px;
+  }
+
+  .form-input{
+    background-color: #f7f7f7;
+    color: #464646;
+    border: 0px;
+    padding: 12px;
+    line-height: 1.5;
+  }

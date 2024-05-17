@@ -19,8 +19,8 @@ body {
 
 .grid{
   display: grid;
-  grid-template-columns: auto auto auto;
-
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 10px;
 }
 
 .m-auto{
@@ -43,7 +43,6 @@ body {
   font-weight: 600;
   justify-content: center;
   padding: 30px;
-  /* flex-wrap: wrap; */
 }
 
 .navbar a:visited {
@@ -70,7 +69,6 @@ body {
   background: url(https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/cache/a3/home-hero-slideshow-01-a34fc4a1.webp);
   height: 606px;
   background-repeat: no-repeat;
-  /* width: 1903px; */
   background-size: cover;
 }
 .h2 {
@@ -80,7 +78,6 @@ body {
   top: 35%;
   left: 40%;
   font-size: 5rem;
-  /* justify-content: center; */
 }
 
 a:link {
@@ -126,10 +123,10 @@ a:link {
   justify-content: center;
 }
 
-.services {
+/* .services {
   flex-direction: column;
   flex-wrap: wrap;
-}
+} */
 
 .row {
   justify-content: space-between;
@@ -348,6 +345,11 @@ h5 {
   margin-bottom: 150px;
 }
 
+.graphic-symbole{
+  position: absolute;
+  left: 45%;
+  top: 20%;
+}
 .contact h2 {
   color: white;
   text-align: center;
@@ -366,10 +368,11 @@ h5 {
   height: 55px;
   border: 2px solid white;
   background: none;
-  padding: 20px;
   top: 60%;
-  left: 45%;
+  left: 43%;
   position: absolute;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .button :hover {

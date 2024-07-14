@@ -2,29 +2,25 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 body,
 ul {
   margin: 0;
 }
 
 body {
-  text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
-}
-
-.d-flex {
-  display: flex;
+  overflow-x: hidden;
 }
 
 
 .grid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  column-gap: 10px;
-}
-
-.m-auto{
-  margin: auto;
+  row-gap: 10px;
 }
 
 
@@ -39,7 +35,7 @@ body {
 }
 
 .navbar {
-  font-size: 16px;
+  font-size: 1.5rem !important;
   font-weight: 600;
   justify-content: center;
   padding: 30px;
@@ -53,32 +49,44 @@ body {
   text-decoration: underline #ffd49b wavy;
 }
 
-.h3 {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 30px;
-}
 
-.h3 a {
-  text-decoration: underline #ffd49b solid !important;
-  color: #ffd49b;
-}
-
-.image {
+.section-handmade {
   position: relative;
   background: url(https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/cache/a3/home-hero-slideshow-01-a34fc4a1.webp);
-  height: 606px;
+  height: 60rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.h2 {
+
+.handmade-h1::before {
+  content: "everything we do is";
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 110px;
+}
+.handmade-h1 {
   color: white;
   position: absolute;
   text-align: center;
-  top: 35%;
-  left: 40%;
-  font-size: 5rem;
+  font-size: 9rem;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.product {
+  font-weight: 700;
+}
+
+.product a{
+  color: #ffd49b ;
+}
+
 
 a:link {
   text-decoration: none;
@@ -96,7 +104,7 @@ a:link {
   width: 260px;
   padding: 30px 30px 30px 40px;
   z-index: 1;
-  top: 78px;
+  top: 195%;
 }
 
 .dropdown-text {
@@ -116,35 +124,6 @@ a:link {
 .dropdown-content a {
   color: white;
 }
-
-.title {
-  padding: 150px;
-  position: relative;
-  justify-content: center;
-}
-
-
-.row {
-  justify-content: space-between;
-  padding: 10px;
-}
-.card {
-  color: #000;
-  flex-direction: row;
-  padding: 10px;
-  width: 591px;
-  position: relative;
-}
-
-.card-link {
-  text-decoration: underline #ffd49b solid 2px !important;
-  font-size: 15px;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 70px;
-}
-
 a.card-link {
   color: #000;
 }
@@ -153,69 +132,76 @@ a.card-link:visited {
 }
 
 a.card-link:hover {
-  text-decoration: underline #ffd49b solid;
   color: #ffd49b;
 }
 
-.card-text {
-  font-size: 50px;
-  margin: 0px 70px 20px 50px;
-  color: #000;
-  position: absolute;
-  top: 30%;
-}
 .divider {
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.h2::before {
-  content: "everything we do is ";
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.5);
-  top: -18px;
-  left: 130px;
-  position: absolute;
-}
 
 .image-container {
   position: relative;
-  text-align: center;
+  width: 100%;
 }
 
-.centered,
-.subtitle {
+.row-gap{
+  row-gap: 10px !important;
+}
+.text-block {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.centered {
+  transform: translate(-50%,-50%);
   background-color: white;
-  width: 400px;
-  max-width: 100%;
-  justify-content: center;
-  box-sizing: border-box;
-  padding: 50px;
+  width: 450px;
+  padding: 60px;
 }
 
-h5 {
-  font-size: 27px;
+
+.card-header {
+  font-size: 30px;
   color: #000;
   text-align: center;
-  box-sizing: border-box;
 }
 
+.card-main-header{
+  font-size: 65px;
+}
+
+.card-secondary-header,
+.tertiary-header{
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid  #ffd49b;
+  font-size: 15px;
+  color: #000;
+}
+
+.card-secondary-header{
+top: 45%;
+}
+
+.tertiary-header{
+  top: 50%;
+}
+
+
+.card-text {
+  margin: 0px 70px 20px 50px;
+  color: #000;
+  top: 40%;
+}
 .subtitle {
   font-size: 15px;
   color: #000;
-  text-transform: none !important;
-  margin-top: 45px;
+  text-align: center;
 }
 
-.subtitle:hover {
+.subtitle:hover ,
+.card-secondary-header:hover{
   color: #9c9c9c;
 }
 
@@ -230,16 +216,26 @@ h5 {
 }
 
 
-.materials-text,
 .materials-text {
   font-size: 45px;
+  font-weight: 600px;
+  letter-spacing: -0.75px;
+  max-width: 600px;
 }
+
 
 .p {
   font-family: "barlow" ;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  max-width: 100%;
+  width: 600px;
+  margin-top: 20px;
+}
+
+.padding-left{
+  padding: 50px;
 }
 
 .materials-link {
@@ -247,15 +243,19 @@ h5 {
   color: #000;
 }
 
-.margin{
+.margin-l{
   margin-left: 30px;
 }
 
+.margin-yy{
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+
 .story {
-   position: relative;
    background: url(https://demo.yootheme.com/joomla/templates/yootheme/cache/2b/home-about-bg-2b45502f.webp);
    height:  750px;
-   max-width: 2560px;
 }
 
 .story-card {
@@ -303,6 +303,7 @@ h5 {
   color: #ffd49b;
   margin-top: 0;
   font-weight: 600;
+  font-size: 22px;
 }
 
 .portfolio {
@@ -323,13 +324,9 @@ h5 {
   width: 30%;
 }
 .portfolio-image {
-  gap: 15px;
-  flex-direction: row-reverse;
+  max-width: 350px;
 }
 
-.portfolio p {
-  width: 70%;
-}
 
 .contact {
   width: 1600px;
@@ -371,8 +368,9 @@ h5 {
   font-weight: 700;
 }
 
-.button :hover {
+.button:hover {
   background-color: white;
+  color: #000;
 }
 
 .div {
@@ -405,7 +403,7 @@ h5 {
   margin-top: 150px;
 }
 
-.section7 {
+.contact-us {
   width: 1600px;
   justify-content: space-between;
 }
@@ -421,4 +419,9 @@ h5 {
   border: 0px;
   padding: 12px;
   line-height: 1.5;
+}
+
+
+.footer-list{
+  padding:0 20px 0 20px;;
 }

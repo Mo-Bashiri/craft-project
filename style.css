@@ -20,7 +20,8 @@ body {
 .grid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  row-gap: 10px;
+  /* row-gap: 10px; */
+  gap: 10px;
 }
 
 
@@ -72,7 +73,8 @@ body {
   color: white;
   position: absolute;
   text-align: center;
-  font-size: 9rem;
+  font-size: 10rem;
+  font-weight: 600;
   align-items: center;
   top: 50%;
   left: 50%;
@@ -80,7 +82,9 @@ body {
 }
 
 .product {
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .product a{
@@ -156,8 +160,8 @@ a.card-link:hover {
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: white;
-  width: 450px;
-  padding: 60px;
+  /* width: 450px; */
+  padding: 40px;
 }
 
 
@@ -168,7 +172,7 @@ a.card-link:hover {
 }
 
 .card-main-header{
-  font-size: 65px;
+  font-size: 80px;
 }
 
 .card-secondary-header,
@@ -190,9 +194,9 @@ top: 45%;
 
 
 .card-text {
-  margin: 0px 70px 20px 50px;
+  margin: 30% 70px 20px 50px;
   color: #000;
-  top: 40%;
+  /* top: 40%; */
 }
 .subtitle {
   font-size: 15px;
@@ -248,8 +252,8 @@ top: 45%;
 }
 
 .margin-yy{
-  margin-top: 15rem;
-  margin-bottom: 15rem;
+  margin-top: 18rem;
+  margin-bottom: 18rem;
 }
 
 
@@ -338,6 +342,7 @@ top: 45%;
   margin-bottom: 150px;
 }
 
+
 .graphic-symbole{
   position: absolute;
   left: 45%;
@@ -346,16 +351,16 @@ top: 45%;
 .contact h2 {
   color: white;
   text-align: center;
-  font-size: 40px;
-  margin: auto;
+  font-size: 58px;
   position: absolute;
-  top: 40%;
-  left: 25%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .button {
   color: white;
-  font-size: 20px;
+  font-size: 28px;
   cursor: pointer;
   width: 180px;
   height: 55px;

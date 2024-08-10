@@ -1,0 +1,49 @@
+@media  (max-width:56em){
+
+    html{
+      font-size: 15px;
+    }
+
+    [class=card-main-header]{
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+
+
+    .btn-mobile-nav{
+      display: block;
+    }
+
+    .main-nav{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .craft{
+      padding-top: 50px;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .handmade-h1::before{
+      padding-bottom: 130px;
+    }
+
+    .card-text{
+      margin: 8rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .materials{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+}

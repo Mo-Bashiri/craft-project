@@ -16,6 +16,9 @@ body {
   overflow-x: hidden;
 }
 
+.container{
+  max-width: 140rem;
+}
 
 .grid{
   display: grid;
@@ -24,7 +27,9 @@ body {
   gap: 10px;
 }
 
-
+.grid-3cols{
+  grid-template-columns: repeat(3,1fr);
+}
 .header {
   text-align: center;
   box-sizing: border-box;
@@ -40,6 +45,23 @@ body {
   font-weight: 600;
   justify-content: center;
   padding: 30px;
+}
+
+
+.btn-mobile-nav{
+ border: none;
+ background:none;
+ cursor: pointer;
+ display: none;
+}
+
+.icon-mobile-nav{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.icon-mobile-nav [name="close-outline"]{
+  display: none;
 }
 
 .navbar a:visited {
@@ -184,9 +206,7 @@ a.card-link:hover {
   color: #000;
 }
 
-.card-secondary-header{
-top: 45%;
-}
+
 
 .tertiary-header{
   top: 50%;
@@ -325,10 +345,10 @@ top: 45%;
 .portfolio-card {
   justify-content: center;
   margin: 170px 100px 50px;
-  width: 30%;
+  width: 40%;
 }
 .portfolio-image {
-  max-width: 350px;
+  max-width: 300px;
 }
 
 
@@ -386,7 +406,7 @@ top: 45%;
 
 .list {
   color: #5c5750;
-  font-size: 12px;
+  font-size: 15px;
   list-style-type: none;
   line-height: 2;
 
@@ -403,9 +423,14 @@ top: 45%;
 .footer {
   background-color: #f7f7f7;
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 150px 30px 150px;
   align-items: center;
   margin-top: 150px;
+}
+
+.footer p{
+  font-size: 15px;
+  margin: 0;
 }
 
 .contact-us {

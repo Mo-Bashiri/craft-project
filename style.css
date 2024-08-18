@@ -182,7 +182,6 @@ a.card-link:hover {
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: white;
-  /* width: 450px; */
   padding: 40px;
 }
 
@@ -216,7 +215,6 @@ a.card-link:hover {
 .card-text {
   margin: 30% 70px 20px 50px;
   color: #000;
-  /* top: 40%; */
 }
 .subtitle {
   font-size: 15px;
@@ -315,7 +313,9 @@ a.card-link:hover {
   bottom: -30%;
   margin-left: 95px;
   gap: 30px;
+  max-width: 100%;
 }
+
 
 .image-subtitle {
   font-size: 24px;
@@ -328,6 +328,10 @@ a.card-link:hover {
   margin-top: 0;
   font-weight: 600;
   font-size: 22px;
+}
+
+.align-items{
+  align-items: center;
 }
 
 .portfolio {

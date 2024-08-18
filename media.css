@@ -1,49 +1,233 @@
-@media  (max-width:56em){
+@media (max-width: 22.5em) {
+  html {
+    font-size: 15px;
+  }
 
-    html{
-      font-size: 15px;
-    }
+  body {
+    text-align: center;
+  }
+  [class="card-main-header"] {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
 
-    [class=card-main-header]{
-      width: 100%;
-      max-width: 100%;
-      text-align: center;
-      margin: 0;
-    }
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .craft {
+    padding-top: 50px;
+  }
+
+  .section-handmade,
+  .story {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-handmade {
+    max-height: 500px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .handmade-h1::before {
+    padding-bottom: 130px;
+    font-size: 15px;
+  }
+
+  .handmade-h1 {
+    font-size: 74px;
+  }
+
+  figure {
+    margin: 0 0 0;
+  }
+
+  .card-main-header {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .card-text {
+    margin-top: 0;
+  }
+
+  .materials {
+    display: block;
+    text-align: center;
+    padding: 140px 0;
+  }
+
+  .materials-link {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .tertiary-header {
+    top: 10%;
+  }
+
+  .materials-image {
+    max-width: 360px;
+    height: 140px;
+  }
+
+  .story {
+    height: 40rem;
+    margin-bottom: 40rem;
+  }
+
+  .story-card {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+    top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .story-card h3 {
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .story-divider {
+    margin: 1rem;
+  }
+
+  .story-card-image {
+    display: grid;
+    max-width: 35rem;
+    position: absolute;
+    top: 30rem;
+    left: -5.5rem;
+  }
+
+  .story-card-image img {
+    width: 22rem;
+  }
+
+  .p {
+    width: 20rem;
+  }
+
+  .padding-left {
+    padding: 2rem;
+  }
+
+  .align-items {
+    text-align: left;
+  }
+
+  .section-portfolio {
+    display: none;
+    text-align: left;
+  }
+
+  .contact {
+    padding: 10rem;
+    width: 24rem;
+    height:500px;
+  }
+
+  .contact h2 {
+    top: 55%;
+    font-size: 46px;
+  }
+
+  .button {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .graphic-symbole {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .contact-us {
+    max-width: 22.5rem;
+  }
 
 
-    .btn-mobile-nav{
-      display: block;
-    }
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .main-nav{
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+  .div-col1 {
+    width: 100%;
+    max-width: 22.5rem;
+    text-align: left;
+  }
 
-    .craft{
-      padding-top: 50px;
-    }
+  .div-col2 {
+    width: 33%;
+    margin-top: 40px;
+    text-align: left;
+  }
 
-    .grid{
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+  .margin-yy {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
 
-    .handmade-h1::before{
-      padding-bottom: 130px;
-    }
+  ul {
+    padding: 0;
+  }
 
-    .card-text{
-      margin: 8rem;
-      display: flex;
-      justify-content: center;
-    }
+  .footer{
+    padding: 20px 0 20px 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    line-height: 1.5;
+  }
 
-    .materials{
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+
+  #first{
+    order: 1;
+  }
+
+  #second{
+    order: 2;
+  }
+
+  #third{
+    order: 3;
+  }
+  .footer-list{
+    padding-left: 0;
+  }
+
+  .opacity{
+    filter: brightness(0);
+    opacity: 50%;
+  }
+
+  .footer p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 1.4;
+  }
 
 }

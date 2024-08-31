@@ -11,6 +11,10 @@ ul {
   margin: 0;
 }
 
+ul{
+  padding-bottom: 0;
+}
+
 body {
   font-family: "Barlow Condensed", sans-serif;
   overflow-x: hidden;
@@ -23,7 +27,6 @@ body {
 .grid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  /* row-gap: 10px; */
   gap: 10px;
 }
 
@@ -37,16 +40,24 @@ body {
   align-items: center;
   width: auto;
   flex-wrap: inherit;
-  margin: auto;
+  margin:auto;
 }
 
 .navbar {
   font-size: 1.5rem !important;
   font-weight: 600;
-  justify-content: center;
-  padding: 30px;
+  position: relative;
+  padding: 0;
 }
 
+
+.nav--item{
+padding: 40px;
+}
+
+.nav-item{
+  /* height: 100px; */
+}
 
 .btn-mobile-nav{
  border: none;
@@ -130,7 +141,11 @@ a:link {
   width: 260px;
   padding: 30px 30px 30px 40px;
   z-index: 1;
-  top: 195%;
+  top: 100%;
+}
+
+.dropdown:hover{
+  display: block;
 }
 
 .dropdown-text {
@@ -261,7 +276,7 @@ a.card-link:hover {
 }
 
 .materials-link {
-  margin-top: 10%;
+  margin-top: 50px;
   color: #000;
 }
 
@@ -355,6 +370,9 @@ a.card-link:hover {
   max-width: 300px;
 }
 
+.expelor{
+  padding-left: 120px;
+}
 
 .contact {
   width: 1600px;
